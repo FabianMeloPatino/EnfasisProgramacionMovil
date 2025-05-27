@@ -5,31 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Porki Fit - Mockup</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      background-color: #FDE4C3;
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'piel-claro': '#FFE8CC',
+            'piel-oscuro': '#B37447'
+          }
+        }
+      }
     }
-  </style>
+  </script>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen">
+<body class="bg-piel-claro flex flex-col items-center justify-center min-h-screen">
 
   <!-- Pantalla de bienvenida -->
   <div class="w-[360px] max-w-full bg-white rounded-2xl shadow-xl p-6 text-center">
-    <h1 class="text-3xl font-bold text-[#B37447]">¡Bienvenido a Porki Fit!</h1>
-    <p class="mt-4 text-gray-700">Tu camino hacia una vida más saludable empieza aquí 💪</p>
+    <h1 class="text-3xl font-bold text-piel-oscuro">¡Bienvenido a Porki Fit!</h1>
+    <p class="mt-4 text-gray-600">Tu camino hacia una vida más saludable empieza aquí 💪</p>
     <img src="logoapp.png" alt="Logo de Porki Fit" style="width: 200px; display: block; margin: 0 auto;">
-    <a href="#login" class="inline-block mt-4 px-6 py-2 bg-[#F9CBA4] text-[#B37447] font-semibold rounded-full hover:bg-[#F7B880] transition-colors">Comenzar</a>
+    <a href="#login" class="inline-block mt-4 px-6 py-2 bg-piel-oscuro text-white rounded-full hover:bg-[#8f5635]">Comenzar</a>
   </div>
 
-  <!-- Pantalla de login (simulada) -->
+  <!-- Pantalla de login -->
   <div id="login" class="w-[360px] max-w-full mt-10 bg-white rounded-2xl shadow-xl p-6">
-    <h2 class="text-xl font-semibold text-[#B37447] mb-4">Iniciar sesión</h2>
+    <h2 class="text-xl font-semibold text-piel-oscuro mb-4">Iniciar sesión</h2>
     <form>
       <input type="email" placeholder="Correo electrónico" class="w-full mb-4 p-2 border border-gray-300 rounded"/>
       <input type="password" placeholder="Contraseña" class="w-full mb-4 p-2 border border-gray-300 rounded"/>
-      <button type="submit" class="w-full bg-[#F9CBA4] text-[#B37447] font-semibold py-2 rounded hover:bg-[#F7B880] transition-colors">Ingresar</button>
+      <button type="submit" class="w-full bg-piel-oscuro text-white py-2 rounded hover:bg-[#8f5635]">Ingresar</button>
     </form>
-    <p class="text-sm text-gray-500 mt-4">¿No tienes cuenta? <a href="register.html" class="text-[#B37447] font-medium hover:underline">Regístrate</a></p>
+    <div class="text-sm text-center mt-4">
+      <a href="#" class="text-piel-oscuro hover:underline">¿Olvidaste tu contraseña?</a>
+    </div>
+    <p class="text-sm text-gray-500 mt-4 text-center">¿No tienes cuenta? 
+      <a href="register.html" class="text-piel-oscuro font-medium hover:underline">Regístrate</a>
+    </p>
   </div>
 
 </body>
