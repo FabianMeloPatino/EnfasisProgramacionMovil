@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Perfil - Porki Fit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'piel-claro': '#FFE8CC',
+            'piel-oscuro': '#B37447'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-piel-claro min-h-screen flex items-center justify-center px-4">
+
+  <div class="bg-white w-[360px] max-w-full p-6 rounded-2xl shadow-xl space-y-4">
+    <h2 class="text-2xl font-bold text-piel-oscuro text-center">Mi Perfil</h2>
+
+    <!-- Información del usuario -->
+    <div class="text-gray-700 space-y-2">
+      <p><strong>Nombre completo:</strong> Esteban Ocampo</p>
+      <p><strong>Edad:</strong> 22 años</p>
+      <p><strong>Género:</strong> Masculino</p>
+      <p><strong>Peso actual:</strong> 95 kg</p>
+      <p><strong>Altura:</strong> 1.86 m</p>
+      <p><strong>IMC:</strong> 27.5 (Sobrepeso leve)</p>
+      <p><strong>Meta:</strong> Bajar de peso</p>
+      <p><strong>Objetivo semanal:</strong> -0.5 kg</p>
+      <p><strong>Nivel de actividad:</strong> Moderado</p>
+      <p><strong>Correo electrónico:</strong> esteban@email.com</p>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="space-y-2">
+      <a href="editar_perfil.html" class="block w-full text-center bg-piel-oscuro text-white py-2 rounded-full hover:bg-[#8f5635]">Editar información</a>
+      <a href="configuracion.html" class="block w-full text-center bg-gray-200 text-piel-oscuro py-2 rounded-full hover:bg-gray-300">Configuración</a>
+      <a href="index.html" class="block w-full text-center text-sm text-gray-500 mt-2 hover:underline">Volver al inicio</a>
+    </div>
+  </div>
+
+</body>
+</html>
