@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Información del Usuario - Porki Fit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'piel-claro': '#FFE8CC',
+            'piel-oscuro': '#B37447'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-piel-claro min-h-screen flex items-center justify-center">
+
+  <div class="bg-white w-[360px] p-6 rounded-2xl shadow-xl">
+    <h2 class="text-2xl font-bold text-piel-oscuro mb-4 text-center">Mi Perfil</h2>
+    
+    <div class="text-gray-700 space-y-2">
+      <p><strong>Nombre:</strong> Esteban Ocampo</p>
+      <p><strong>Edad:</strong> 22 años</p>
+      <p><strong>Peso:</strong> 95 kg</p>
+      <p><strong>Altura:</strong> 1.86 m</p>
+      <p><strong>Meta:</strong> Bajar de peso</p>
+    </div>
+
+    <a href="index.html" class="block mt-6 text-center bg-piel-oscuro text-white py-2 rounded-full hover:bg-[#8f5635]">Volver</a>
+  </div>
+
+</body>
+</html>
+
