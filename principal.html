@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Porki Fit - Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'piel-claro': '#FFE8CC',
+            'piel-oscuro': '#B37447'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-piel-claro min-h-screen flex flex-col items-center p-4">
+
+  <!-- Encabezado del usuario -->
+  <div class="bg-white w-full max-w-[360px] rounded-2xl shadow-md p-4 mb-4">
+    <div class="flex items-center space-x-4">
+      <img src="foto_usuario.png" alt="Usuario" class="w-16 h-16 rounded-full object-cover border border-piel-oscuro" />
+      <div>
+        <h2 class="text-lg font-bold text-piel-oscuro">Esteban Ocampo</h2>
+        <p class="text-sm text-gray-600">Nivel: Intermedio</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botones de navegación -->
+  <div class="flex justify-between gap-4 mb-4 w-full max-w-[360px]">
+    <a href="configuracion.html" class="flex-1 bg-piel-oscuro text-white py-2 rounded-full text-center text-sm">Configuración</a>
+    <a href="perfil.html" class="flex-1 bg-piel-oscuro text-white py-2 rounded-full text-center text-sm">Mi Perfil</a>
+  </div>
+
+  <!-- Indicadores -->
+  <div class="bg-white w-full max-w-[360px] rounded-2xl shadow-md p-4 mb-4">
+    <h3 class="text-md font-semibold text-piel-oscuro mb-2">Progreso de Hoy</h3>
+    <p class="text-sm text-gray-700">Ejercicios completados: 6/10</p>
+    <div class="w-full bg-gray-200 h-2 rounded mt-1 mb-2">
+      <div class="bg-piel-oscuro h-2 rounded w-[60%]"></div>
+    </div>
+    <p class="text-sm text-gray-700">Masa Corporal: 85kg / 78kg deseado</p>
+    <div class="w-full bg-gray-200 h-2 rounded mt-1">
+      <div class="bg-piel-oscuro h-2 rounded w-[78%]"></div>
+    </div>
+  </div>
+
+  <!-- Lista de ejercicios -->
+  <div class="bg-white w-full max-w-[360px] rounded-2xl shadow-md p-4 mb-4">
+    <h3 class="text-md font-semibold text-piel-oscuro mb-2">Ejercicios</h3>
+    <ul class="space-y-2 text-sm">
+      <li><label><input type="checkbox" checked class="mr-2">Sentadillas</label></li>
+      <li><label><input type="checkbox" class="mr-2">Abdominales</label></li>
+      <li><label><input type="checkbox" checked class="mr-2">Flexiones</label></li>
+      <li><label><input type="checkbox" class="mr-2">Cardio 30min</label></li>
+      <li><label><input type="checkbox" class="mr-2">Bicicleta</label></li>
+    </ul>
+  </div>
+
+  <!-- Noticias -->
+  <div class="bg-white w-full max-w-[360px] rounded-2xl shadow-md p-4 mb-4">
+    <h3 class="text-md font-semibold text-piel-oscuro mb-2">Noticias</h3>
+    <p class="text-sm text-gray-700">🥗 Nueva receta de desayuno saludable publicada. <a href="#" class="text-piel-oscuro underline">Ver más</a></p>
+  </div>
+
+  <!-- Foro -->
+  <div class="bg-white w-full max-w-[360px] rounded-2xl shadow-md p-4 mb-4">
+    <h3 class="text-md font-semibold text-piel-oscuro mb-2">Foro</h3>
+    <p class="text-sm text-gray-700">💬 Se ha abierto un hilo sobre rutinas nocturnas. <a href="#" class="text-piel-oscuro underline">Participar</a></p>
+  </div>
+
+  <!-- Consejo de salud -->
+  <div class="bg-white w-full max-w-[360px] rounded-2xl shadow-md p-4 mb-4">
+    <h3 class="text-md font-semibold text-piel-oscuro mb-2">Consejo del día</h3>
+    <p class="text-sm text-gray-700">Bebe al menos 2 litros de agua al día 💧</p>
+  </div>
+
+  <!-- Galería -->
+  <div class="bg-white w-full max-w-[360px] rounded-2xl shadow-md p-4 mb-4">
+    <h3 class="text-md font-semibold text-piel-oscuro mb-2">Galería</h3>
+    <div class="grid grid-cols-3 gap-2">
+      <img src="galeria1.jpg" class="w-full aspect-square object-cover rounded" />
+      <img src="galeria2.jpg" class="w-full aspect-square object-cover rounded" />
+      <img src="galeria3.jpg" class="w-full aspect-square object-cover rounded" />
+      <!-- Puedes agregar más -->
+    </div>
+  </div>
+
+  <!-- Dieta -->
+  <div class="bg-white w-full max-w-[360px] rounded-2xl shadow-md p-4 mb-4">
+    <h3 class="text-md font-semibold text-piel-oscuro mb-2">Plan de comidas</h3>
+    <ul class="text-sm text-gray-700 space-y-1">
+      <li><strong>08:00 AM:</strong> Avena con frutas 🍓 <a href="#" class="text-piel-oscuro underline">Ver receta</a></li>
+      <li><strong>01:00 PM:</strong> Pollo con arroz integral 🍗 <a href="#" class="text-piel-oscuro underline">Ver receta</a></li>
+      <li><strong>07:00 PM:</strong> Ensalada verde 🥗 <a href="#" class="text-piel-oscuro underline">Ver receta</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
