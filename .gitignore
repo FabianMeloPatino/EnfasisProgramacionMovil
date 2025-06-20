@@ -1,40 +1,73 @@
-# Dependencias
+# Node dependencies
 node_modules/
-plugins/
-platforms/
 
-# Salida de builds
-www/
+# Angular compiler output
 dist/
-build/
-android/
-ios/
+out-tsc/
 
-# Archivos de logs y diagnósticos
+# Angular cache
+.angular/
+
+# Ionic build
+www/
+platforms/
+plugins/
+
+# IDEs
+.idea/
+.vscode/
+*.code-workspace
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-.idea/
-.vscode/
 
-# Entornos
-.env
-.env.*
-
-# Cache
-.cache/
-.angular/
-coverage/
-tmp/
-temp/
-*.tmp
-
-# Archivos de sistema y temporales
+# System files
 .DS_Store
 Thumbs.db
 
-# Ionic / Capacitor
-capacitor.config.json
-capacitor.config.ts
-app-debug.apk
+# Android build
+android/.gradle/
+android/.idea/
+android/local.properties
+android/.cxx/
+android/app/build/
+android/build/
+
+# APKs and archives
+*.apk
+*.zip
+
+# Cache and others
+*.log
+*.tgz
+*.tmp
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+
+# Compiled files
+*.class
+*.exe
+*.dll
+*.so
+*.pyc
+*.pyo
+*.pyd
+
+# Mac-specific
+.AppleDouble
+.LSOverride
+
+# Windows-specific
+ehthumbs.db
+Desktop.ini

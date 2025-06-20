@@ -1,0 +1,50 @@
+.home-background {
+  --background: #ffeef7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.home-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+
+  ion-card-content {
+    padding: 1rem;
+  }
+
+  ion-button {
+    --border-radius: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-title {
+    font-size: 1.5rem;
+  }
+
+  .home-card {
+    ion-button {
+      font-size: 0.95rem;
+    }
+  }
+}

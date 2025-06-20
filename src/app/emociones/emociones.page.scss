@@ -1,0 +1,54 @@
+.emociones-background {
+    --background: #ffeef7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .emociones-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .emociones-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .emociones-list {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .emocion-item {
+    --background: #fff;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+
+    ion-label,
+    ion-input {
+      color: #000; /* Texto negro */
+    }
+  }
+  
+  .emocion-item:hover {
+    --background: #fce4ec;
+    cursor: pointer;
+  }
+
+  .volver-button {
+    margin-top: 1.5rem;
+    --background: #e91e63;
+    --background-hover: #d81b60;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 1rem;
+  }

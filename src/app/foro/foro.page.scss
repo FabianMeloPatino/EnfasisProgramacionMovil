@@ -1,0 +1,49 @@
+.foro-background {
+    --background: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .foro-container {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .foro-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .foro-item {
+    margin-bottom: 1rem;
+    --background: #ffffff;
+    border-radius: 0.8rem;
+
+    ion-label,
+    ion-input {
+      color: #000; /* Texto negro */
+    }
+  }
+  
+  .foro-button,
+  .volver-button {
+    --background: #e91e63;
+    --background-hover: #d81b60;
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .foro-lista {
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+  }  
