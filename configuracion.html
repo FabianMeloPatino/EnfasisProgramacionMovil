@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Configuración - Porki Fit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'piel-claro': '#FFE8CC',
+            'piel-oscuro': '#B37447'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-piel-claro min-h-screen flex items-center justify-center px-4">
+
+  <div class="bg-white w-[360px] max-w-full p-6 rounded-2xl shadow-xl space-y-4">
+    <h2 class="text-2xl font-bold text-piel-oscuro text-center">Configuración</h2>
+
+    <!-- Idioma -->
+    <div>
+      <label for="idioma" class="block text-gray-700 mb-1">Idioma de la aplicación:</label>
+      <select id="idioma" class="w-full p-2 border border-gray-300 rounded">
+        <option>Español</option>
+        <option>Inglés</option>
+      </select>
+    </div>
+
+    <!-- Tema -->
+    <div>
+      <label for="tema" class="block text-gray-700 mb-1">Tema:</label>
+      <select id="tema" class="w-full p-2 border border-gray-300 rounded">
+        <option>Claro</option>
+        <option>Oscuro</option>
+        <option>Automático</option>
+      </select>
+    </div>
+
+    <!-- Notificaciones -->
+    <div class="flex items-center justify-between">
+      <label for="notificaciones" class="text-gray-700">Notificaciones</label>
+      <input type="checkbox" id="notificaciones" class="w-5 h-5 text-piel-oscuro rounded">
+    </div>
+
+    <!-- Recordatorios -->
+    <div class="flex items-center justify-between">
+      <label for="recordatorios" class="text-gray-700">Recordatorios de actividad</label>
+      <input type="checkbox" id="recordatorios" class="w-5 h-5 text-piel-oscuro rounded">
+    </div>
+
+    <!-- Sincronización -->
+    <div class="flex items-center justify-between">
+      <label for="sincronizacion" class="text-gray-700">Sincronización automática</label>
+      <input type="checkbox" id="sincronizacion" class="w-5 h-5 text-piel-oscuro rounded">
+    </div>
+
+    <!-- Privacidad -->
+    <div>
+      <label for="privacidad" class="block text-gray-700 mb-1">Privacidad:</label>
+      <select id="privacidad" class="w-full p-2 border border-gray-300 rounded">
+        <option>Visible para amigos</option>
+        <option>Privado</option>
+        <option>Público</option>
+      </select>
+    </div>
+
+    <!-- Cambiar contraseña -->
+    <div class="text-center">
+      <a href="recuperar_contrasena.html" class="text-sm text-piel-oscuro hover:underline">Cambiar o recuperar contraseña</a>
+    </div>
+
+    <!-- Botón Guardar -->
+    <button class="w-full mt-4 bg-piel-oscuro text-white py-2 rounded-full hover:bg-[#8f5635]">Guardar cambios</button>
+
+    <!-- Cerrar sesión -->
+    <button class="w-full mt-2 bg-red-100 text-red-700 py-2 rounded-full hover:bg-red-200">Cerrar sesión</button>
+
+    <!-- Eliminar cuenta -->
+    <button class="w-full mt-2 text-sm text-red-600 hover:underline">Eliminar cuenta permanentemente</button>
+  </div>
+
+</body>
+</html>
