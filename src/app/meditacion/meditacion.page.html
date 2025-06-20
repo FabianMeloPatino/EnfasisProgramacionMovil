@@ -1,5 +1,10 @@
 <ion-header>
   <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/inicio">
+        <ion-icon name="arrow-back-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>Meditación</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,7 +21,17 @@
         <ion-button expand="block" (click)="reproducirAudio()">
           Reproducir Audio
         </ion-button>
+
+        <ion-button expand="block" color="medium" routerLink="/home">
+          Volver a Inicio
+        </ion-button>
       </ion-card-content>
     </ion-card>
   </div>
+
+  <ng-template #usadosParaCompilador>
+    <ion-header></ion-header>
+    <ion-toolbar></ion-toolbar>
+    <ion-title></ion-title>
+  </ng-template>
 </ion-content>

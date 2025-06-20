@@ -7,7 +7,9 @@ import {
   IonContent,
   IonCard,
   IonCardContent,
-  IonButton
+  IonButton,
+  IonButtons,
+  IonIcon
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -23,7 +25,9 @@ import {
     IonContent,
     IonCard,
     IonCardContent,
-    IonButton
+    IonButton,
+    IonButtons,
+    IonIcon
   ]
 })
 export class MeditacionPage {
