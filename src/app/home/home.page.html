@@ -1,32 +1,20 @@
-<ion-header>
-  <ion-toolbar color="light">
-    <ion-title>Porki Fit</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="home-background">
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-  <div class="home-container">
-    <h2 class="home-title">Bienvenido</h2>
-
-    <ion-card class="home-card" *ngFor="let item of [
-      { texto: 'Registrar Emoción', ruta: '/emociones' },
-      { texto: 'Ver Historial', ruta: '/historial' },
-      { texto: 'Meditación', ruta: '/meditacion' },
-      { texto: 'Foro Anónimo', ruta: '/foro' },
-      { texto: 'Contactar Psicólogo', ruta: '/psicologo' },
-      { texto: 'Ajustes', ruta: '/ajustes' },
-      { texto: 'Cerrar Sesión', ruta: '/login', danger: true }
-    ]">
-      <ion-card-content>
-        <ion-button
-          expand="block"
-          [color]="item.danger ? 'danger' : 'primary'"
-          [routerLink]="item.ruta">
-          {{ item.texto }}
-        </ion-button>
-      </ion-card-content>
-    </ion-card>
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
-
 </ion-content>

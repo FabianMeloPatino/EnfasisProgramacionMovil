@@ -1,0 +1,7 @@
+{
+  "name": "calma-campus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
