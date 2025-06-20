@@ -1,1 +1,40 @@
-node_modules
+# Dependencias
+node_modules/
+plugins/
+platforms/
+
+# Salida de builds
+www/
+dist/
+build/
+android/
+ios/
+
+# Archivos de logs y diagnósticos
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.idea/
+.vscode/
+
+# Entornos
+.env
+.env.*
+
+# Cache
+.cache/
+.angular/
+coverage/
+tmp/
+temp/
+*.tmp
+
+# Archivos de sistema y temporales
+.DS_Store
+Thumbs.db
+
+# Ionic / Capacitor
+capacitor.config.json
+capacitor.config.ts
+app-debug.apk
