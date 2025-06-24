@@ -12,6 +12,7 @@ import {
   IonTextarea,
   IonButton
 } from '@ionic/angular/standalone';
+import { RouterModule } from '@angular/router'; // ✅ necesario para routerLink
 
 @Component({
   selector: 'app-psicologo',
@@ -21,6 +22,7 @@ import {
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule, // ✅ necesario para usar routerLink en el HTML
     IonHeader,
     IonToolbar,
     IonTitle,
@@ -43,5 +45,10 @@ export class PsicologoPage {
       correo: this.correo,
       mensaje: this.mensaje
     });
+
+    // (Opcional) limpiar campos luego del envío
+    this.nombre = '';
+    this.correo = '';
+    this.mensaje = '';
   }
 }

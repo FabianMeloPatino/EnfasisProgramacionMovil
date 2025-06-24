@@ -4,7 +4,8 @@ import {
   IonItem,
   IonLabel,
   IonInput,
-  IonButton
+  IonButton,
+  AlertController
 } from '@ionic/angular/standalone';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -28,11 +29,19 @@ export class LoginPage {
   email: string = '';
   password: string = '';
 
-  login() {
-    if (this.email && this.password) {
-      console.log('Inicio de sesión con:', this.email, this.password);
+  constructor(private alertController: AlertController) {}
+
+  async login() {
+    if (this.email === 'fmelo@poligran.edu.co' && this.password === 'fabian123') {
+      // Redirige a /home
+      window.location.href = 'http://192.168.11.23:8100/home';
     } else {
-      console.warn('Por favor, complete todos los campos.');
+      const alert = await this.alertController.create({
+        header: 'Error',
+        message: 'Correo o contraseña incorrectos.',
+        buttons: ['OK'],
+      });
+      await alert.present();
     }
   }
 }

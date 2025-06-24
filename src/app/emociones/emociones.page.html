@@ -2,13 +2,46 @@
   <div class="emociones-container">
     <h2 class="emociones-title">¿Cómo te sientes hoy?</h2>
 
+    <!-- Cuadro resumen de emociones -->
+    <ion-card *ngIf="emocionesRegistradas.length > 0" class="resumen-card">
+      <ion-card-header>
+        <ion-card-title>Resumen de emociones</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let emocion of resumenEmociones">
+            <ion-label>
+              {{ emocion.nombre }} – {{ emocion.porcentaje }}%
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Lista de emociones -->
     <ion-list class="emociones-list">
-      <ion-item *ngFor="let emocion of emociones" class="emocion-item" (click)="seleccionarEmocion(emocion)">
+      <ion-item 
+        *ngFor="let emocion of emociones" 
+        class="emocion-item"
+        [class.emocion-seleccionada]="emocion === emocionSeleccionada"
+        (click)="seleccionarEmocion(emocion)">
         <ion-label>{{ emocion }}</ion-label>
       </ion-item>
     </ion-list>
 
-    <ion-button class="volver-button" expand="block" routerLink="/home">
+    <!-- Botones -->
+    <ion-button 
+      class="registrar-button" 
+      expand="block" 
+      [disabled]="!emocionSeleccionada" 
+      (click)="registrarEmocion()">
+      Registrar Emoción
+    </ion-button>
+
+    <ion-button 
+      class="volver-button" 
+      expand="block" 
+      routerLink="/home">
       Volver al Menú
     </ion-button>
   </div>

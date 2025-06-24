@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router'; // ✅ Importación necesaria para routerLink
 
 @Component({
   selector: 'app-ajustes',
@@ -9,7 +10,8 @@ import { IonicModule } from '@ionic/angular';
   styleUrls: ['./ajustes.page.scss'],
   imports: [
     FormsModule,
-    IonicModule
+    IonicModule,
+    RouterModule // ✅ Permite usar routerLink en el HTML
   ]
 })
 export class AjustesPage {
@@ -21,5 +23,12 @@ export class AjustesPage {
       notificaciones: this.notificaciones,
       modoOscuro: this.modoOscuro
     });
+
+    // (Opcional) lógica para activar/desactivar modo oscuro
+    if (this.modoOscuro) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
   }
 }
