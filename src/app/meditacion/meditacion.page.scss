@@ -34,6 +34,7 @@
   margin-bottom: 1.5rem;
 }
 
+/* ✅ Estilo uniforme para ambos botones */
 ion-button {
   --background: #e91e63;
   --background-hover: #d81b60;
@@ -44,8 +45,10 @@ ion-button {
   font-size: 1rem;
   height: 3rem;
   box-shadow: 0 4px 8px rgba(233, 30, 99, 0.3);
+  margin-top: 1rem;
 }
 
+/* ✅ Estilo responsive */
 @media (max-width: 360px) {
   .meditacion-title {
     font-size: 1.6rem;

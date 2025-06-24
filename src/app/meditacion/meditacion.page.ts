@@ -12,6 +12,8 @@ import {
   IonIcon
 } from '@ionic/angular/standalone';
 
+import { RouterModule } from '@angular/router'; // ✅ IMPORTAR ESTO
+
 @Component({
   selector: 'app-meditacion',
   standalone: true,
@@ -19,6 +21,7 @@ import {
   styleUrls: ['./meditacion.page.scss'],
   imports: [
     CommonModule,
+    RouterModule, // ✅ AÑADIRLO AQUÍ
     IonHeader,
     IonToolbar,
     IonTitle,
@@ -31,7 +34,13 @@ import {
   ]
 })
 export class MeditacionPage {
+  audio = new Audio('assets/audio/relajacion.mp3');
+
   reproducirAudio() {
-    console.log('Reproducir audio');
+    this.audio.play().then(() => {
+      console.log('Audio reproduciéndose...');
+    }).catch(err => {
+      console.error('Error al reproducir audio:', err);
+    });
   }
 }
